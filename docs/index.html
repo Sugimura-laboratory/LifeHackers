@@ -1,5 +1,18 @@
 <html>
   <head>
+	<!-- Google tag (gtag.js)：sugi-lab.net で開いたときだけ計測する（手元での確認は数えない） -->
+	<script>
+	  if (/(^|\.)sugi-lab\.net$/.test(location.hostname)) {
+	    var gtagScript = document.createElement('script');
+	    gtagScript.async = true;
+	    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5W5H73XPRP';
+	    document.head.appendChild(gtagScript);
+	    window.dataLayer = window.dataLayer || [];
+	    window.gtag = function () { dataLayer.push(arguments); };
+	    gtag('js', new Date());
+	    gtag('config', 'G-5W5H73XPRP');
+	  }
+	</script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8"/>
 	<title>Life Hackers</title>

@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*1枚だけ置いた画像の下にすき間ができないようにする（DOCTYPE を付けて標準モードにしたため）*/
+.top img, .cImage img{
+    vertical-align: bottom;
+}
+
 /*ページの基本デザイン*/
 h1{
     margin: 0;
@@ -16,15 +21,15 @@ h2{
 p{
     margin: 0;
     padding: 0;
-    color: #5B8184;
+    color: #3F5C5F;
 }
 
 /*ヘッダー*/
 .header{
     margin: 0;
-    padding: 15 30 0;
+    padding: 15px 30px 0;
     color: #FFC74A;
-    background-color: #5B8184;
+    background-color: #3F5C5F;
 }
 .header h1{
     font-family: "メイリオ", "Meiryo";
@@ -42,11 +47,11 @@ p{
 }
 .nav ul{
     margin: 0;
-    padding: 0 0 7;
+    padding: 0 0 7px;
     letter-spacing: 2px;
     text-align: right;
     list-style-type: none;
-    background-color: #5B8184;
+    background-color: #3F5C5F;
 }
 
 .nav ul li{
@@ -70,7 +75,7 @@ p{
     margin: 0;
     padding: 0;
     font-family:'メイリオ', 'Meiryo', sans-serif;
-    color: #5B8184;
+    color: #3F5C5F;
     background-color: #FFFFFF;
 }
 
@@ -78,31 +83,31 @@ p{
 
 .section_G{
     margin: 0;
-    padding: 20 0;
+    padding: 20px 0;
     background-color: #E8F1EA;
 }
 .section_G p{
-    margin: 15;
+    margin: 15px;
     line-height: 2;
-    color: #5B8184;
+    color: #3F5C5F;
 }
 
 .section_Y{
     margin: 0;
-    padding: 15 0;
+    padding: 15px 0;
     background-color: #FFFDEF;
 }
 .section_Y h2{
     color: #FFC74A;
 }
 .section_Y p{
-    margin: 15;
+    margin: 15px;
     line-height: 2;
-    color: #5B8184;
+    color: #3F5C5F;
 }
 
 .project{
-    margin: 20 60;
+    margin: 20px 60px;
     padding: 0;
     
     /*display: flex;*/
@@ -112,30 +117,30 @@ p{
 
 .project h3{
     margin: 0;
-    padding: 10 20 5;
+    padding: 10px 20px 5px;
     /*width: 240px;*/
     /*height: 100px;*/
     /*text-align: center;*/
     color: #FFFFFF;
-    background-color: #5B8184;
+    background-color: #3F5C5F;
 }
 
 .project h4{
-    margin: 25 0 0;
-    padding: 10 20;
-    color: #5B8184;
+    margin: 25px 0 0;
+    padding: 10px 20px;
+    color: #3F5C5F;
 }
 .project p{
     margin: 0;
     /*padding: 0;*/
-    padding: 5 20;
-    color: #5B8184;
+    padding: 5px 20px;
+    color: #3F5C5F;
     background-color: #FFFFFF;
 }
 
 .project a{
     margin: 0;
-    padding: 0 20;
+    padding: 0 20px;
 }
 
 .pImage{
@@ -158,8 +163,8 @@ p{
 }
 
 .cImage{
-    margin: 10;
-    padding: 10;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -170,9 +175,9 @@ p{
 /*フッター*/
 .footer{
     margin: 0;
-    padding: 20;
+    padding: 20px;
     text-align: center;
-    background-color: #5B8184;
+    background-color: #3F5C5F;
 }
 .footer p{
     color: #FFFFFF;
